@@ -59,6 +59,16 @@ Now go to the `Plater` tab and slice your model. In the bottom left corner, chan
 
 You should now be good to go for your first test print with high speed settings. If this works well (and I hope it does, otherwise this guide might be crap...) you can increase the `Max. Volumentric Speed` (e.g. in steps of 2 mm³/s) until your print starts to look ugly or your extruder makes painful noises and loses steps. If this happens, you have reached the limit of your printer. Go down to the last working value (I am running a Prusa i3 MK2.5S with a 0.8 mm nozzle at 17 mm³/s).
 
+## Advanced Parameter Tuning
+
+Ok, you got the basic fast print working, but you want more!
+
+You can tune the amount of `Solid layers` at the top to close holes in the top layer of hooks for the rubber band. Increase the number of solid layers to 5.
+
+If you think your print is too flimsy, you can decrease the width of `Perimeters` to 0.55 mm. Leave `External perimeters` at 0.87 mm! This allows more material in narrow spaces. Also you can set the `Solid infill` and `Top solid infill` to this width, to close even more holes. Increase the number of perimeters to 3 when doing this.
+
+You can also tune the K factor (also known as linear advance) for your printer. Make sure it supports it. Prusa printers do support this. It will basically control the pressure in the nozzle. This is important at high speeds. You can read more about this in the [Prusa Knowledge Base](https://help.prusa3d.com/en/article/linear-advance_2252). Prusa suggest a default of 45 for PETG. I get better results with 40 on a 0.4 mm nozzle. On my 0.8 mm nozzle I am currently using a value of 15.
+
 [gap_fill_and_infill]: https://raw.githubusercontent.com/yschroeder/covid-19-face-shield/master/pictures/gap_fill_and_infill.PNG "Gap Fill and Infill"
 
 [only_perimeters]: https://raw.githubusercontent.com/yschroeder/covid-19-face-shield/master/pictures/only_perimeters.PNG "Only Perimeters"
