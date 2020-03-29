@@ -29,6 +29,22 @@ Q: I am using Cura to slice my STls, can you provide a guide for Cura?
 
 A: I am afraid that at this point, I can only provide a guide for `PrusaSlicer`. By the way: Did you know that `PrusaSlicer 2.2` supports the `Ender 3` out of the box? You might want to try that!
 
+## Which model to print?
+
+This repository contains multiple models that you can choose from. Let me introduce them to you:
+
+### `stl/covid19_headband_rc3_no_text v1.stl`
+This a remix of the original [Prusa Protective Face Shield RC3](https://www.prusaprinters.org/prints/25857-prusa-protective-face-shield-rc2). I removed the text and indents from it as it slows down printing. Otherwise, this is exactly the same as the original.
+
+### `stl/Covid-19 Shield v10.stl`
+This a version that I designed myself. All the relevant features have the same geometry as the original Prusa version. However, the wall thickness is reduced from 2.5 mm to 1.67 mm. This makes it possible to print it very fast, but it gets more flexible (maybe this not even a downside). The guide below uses this model.
+
+### `stl/Covid-19 Shield 2.5mm v2.stl`
+If you think the above version is too flimsy/flexible you can go with this one. It has the same thickness as the original from Prusa. It has a constant wall thickness of 2.5 mm.
+
+### `stl/Bottom Reinforcement fast MK2 v3.stl`
+This is an updated version of the original bottom reinforcement part from the Prusa shield. It has no holes and constant wall thickness of 1.67 mm as well. The original one has a 1 mm gap for the plastic sheet. This one has only 0.8 mm for a tighter fit. Make sure you plastic sheets fit into this before starting mass production!
+
 ## Print Settings
 
 Overall, the model we want to print is pretty simple. We do not want it to look super nice, it needs to be functional. There is basically one parameter that limits your maximum print speed: `Max. Volumentric Speed`. This parameter is defined in `mm³/s` (cubic millimeters per second) and tells `PrusaSlicer` the maximum amount of material your hotend is able to melt per second. The exact value for this depends on your hotend, nozzle size, material, print temperature, extruder gears... So you need to experiment with this a bit. In the end it boils down to this: You want your printer to extrude the maximum amount of material _all the time_. Luckily, you don't strictly need a large nozzle to achive this (but it helps). Even printers with 0.4 mm nozzles can reach their `Max. Volumentric Speed`.
