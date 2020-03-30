@@ -39,6 +39,10 @@ This a remix of the original [Prusa Protective Face Shield RC3](https://www.prus
 ### `stl/Covid-19 Shield v10.stl`
 This a version that I designed myself. All the relevant features have the same geometry as the original Prusa version. However, the wall thickness is reduced from 2.5 mm to 1.67 mm. This makes it possible to print it very fast, but it gets more flexible (maybe this not even a downside). The guide below uses this model.
 
+If you have problems with layer adhesion, try `stl/Covid-19 Shield v10 Lily.stl`. It has lily pads at crucial points to help with adhesion. Just remove them with side cutters at the end.
+
+If you want to print for longer durations (e.g. over night), you can try the stacked versions. Look into `stl/stacks`. We have stacks from 2 to 9 parts. Start with a small stack and check if it prints well on your machine and that you can split the parts afterwards!
+
 ### `stl/Covid-19 Shield 2.5mm v2.stl`
 If you think the above version is too flimsy/flexible you can go with this one. It has the same thickness as the original from Prusa. It has a constant wall thickness of 2.5 mm.
 
