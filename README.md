@@ -5,7 +5,7 @@ Some files and documentation on how to print the Prusa Protective Face Shield re
 
 * Use `PrusaSlicer`
 * Set all speeds (except for `Support material`, `Bridges`, `Gap fill`, and `First layer speed`) to your `Travel` speed. The speeds in reality are limited by the slicer automatically by the `Max. Volumetric Speed` of the filament. So the printer will not print that fast, but as fast as possible.
-* Set the `Max. Volumetric Speed` of the filament to set the real print speed. 17 mm³/s  work for a E3D V6 with 0.8mm nozzle. Otherwise, start at 8 mm³/s, increase to find the maximum of your printer.
+* Set the `Max. Volumetric Speed` of the filament to set the real print speed. With a 0.4 mm nozzle, start at 8 mm³/s, increase to find the maximum of your printer. 17 mm³/s work for a E3D V6 with 0.8mm nozzle.
 * Set 0% infill
 * Set 0.87 mm extrusion width when using the `stl/Covid-19 Shield v10.stl` model
 * If the extruder skips steps (loud clacking noise), lower the `Max. Volumetric Speed`. Or try to increase the nozzle temp, so the filament melts faster.
