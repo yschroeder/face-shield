@@ -1,6 +1,15 @@
 # Print COVID-19 Face Shields _the fast way_
 Some files and documentation on how to print the Prusa Protective Face Shield really fast.
 
+## TL;DR
+
+* Use `PrusaSlicer`
+* Set all speeds (except for `Support material`, `Bridges`, `Gap fill`, and `First layer speed`) to your `Travel` speed. The speeds in reality are limited by the slicer automatically by the `Max. Volumetric Speed` of the filament. So the printer will not print that fast, but as fast as possible.
+* Set the `Max. Volumetric Speed` of the filament to set the real print speed. 17 mm³/s  work for a E3D V6 with 0.8mm nozzle. Otherwise, start at 8 mm³/s, increase to find the maximum of your printer.
+* Set 0% infill
+* Set 0.87 mm extrusion width when using the `stl/Covid-19 Shield v10.stl` model
+* If the extruder skips steps (loud clacking noise), lower the `Max. Volumetric Speed`. Or try to increase the nozzle temp, so the filament melts faster.
+
 ## Frequently Asked Questions
 
 Q: That `Prusa Protective Face Shield RC3` prints so slow and the virus is spreading exponentially! How can we be faster?
@@ -51,7 +60,7 @@ This is an updated version of the original bottom reinforcement part from the Pr
 
 ## Print Settings
 
-Overall, the model we want to print is pretty simple. We do not want it to look super nice, it needs to be functional. There is basically one parameter that limits your maximum print speed: `Max. Volumentric Speed`. This parameter is defined in `mm³/s` (cubic millimeters per second) and tells `PrusaSlicer` the maximum amount of material your hotend is able to melt per second. The exact value for this depends on your hotend, nozzle size, material, print temperature, extruder gears... So you need to experiment with this a bit. In the end it boils down to this: You want your printer to extrude the maximum amount of material _all the time_. Luckily, you don't strictly need a large nozzle to achive this (but it helps). Even printers with 0.4 mm nozzles can reach their `Max. Volumentric Speed`.
+Overall, the model we want to print is pretty simple. We do not want it to look super nice, it needs to be functional. There is basically one parameter that limits your maximum print speed: `Max. Volumetric Speed`. This parameter is defined in `mm³/s` (cubic millimeters per second) and tells `PrusaSlicer` the maximum amount of material your hotend is able to melt per second. The exact value for this depends on your hotend, nozzle size, material, print temperature, extruder gears... So you need to experiment with this a bit. In the end it boils down to this: You want your printer to extrude the maximum amount of material _all the time_. Luckily, you don't strictly need a large nozzle to achive this (but it helps). Even printers with 0.4 mm nozzles can reach their `Max. Volumetric Speed`.
 
 There are some types of features that slow down your 3D printer. These includes gap filling small holes (or thin spaces between narrow outer perimeters), sharp turns of the printing direction and infill (which is basically sharp turns of the printing direction all the time). If you manage to print your model by only printing perimeters you can increase your print speed a lot!
 
@@ -70,14 +79,14 @@ Second, you need to set you extrusion width correctly. Luckily, `PrusaSlicer` ca
 
 Here it says that the optimal thin wall thickness is 1.68 mm for two lines and 3.29 mm for 4 lines. 1.68 mm is very close to 1.67mm, so this is correctly configured! This value is influenced by the `Layer height` and the extrusion width for `Perimeters` and `External perimeters`. An extrusion width of 0.87 mm and a layer height of 0.3mm are used here for a 0.4 mm nozzle. Yes, you can actually print 0.87 mm width with a 0.4 mm nozzle (at least with an E3D nozzle). This [YouTube video by CNCKitchen](https://www.youtube.com/watch?v=9YaJ0wSKKHA) gives more info if you are interested.
 
-Ok, we now have a model that is designed for this kind of print and a correct perimeter width. Let's talk about print speed. Rembember the `Max. Volumentric Speed`? This is your print speed. Configure all speeds (except for `Support material`, `Bridges`, and `Gap fill` and `First layer speed`) to your `Travel` speed. Yes, do this. You won't reach these speeds anyway (and if you actually do, can I have your printer please?). Now set the `Max. Volumentric Speed` in `Filament Settings/Advanced` to a low starting value. 8 mm³/s is a good starting point.
+Ok, we now have a model that is designed for this kind of print and a correct perimeter width. Let's talk about print speed. Rembember the `Max. Volumetric Speed`? This is your print speed. Configure all speeds (except for `Support material`, `Bridges`, and `Gap fill` and `First layer speed`) to your `Travel` speed. Yes, do this. You won't reach these speeds anyway (and if you actually do, can I have your printer please?). Now set the `Max. Volumetric Speed` in `Filament Settings/Advanced` to a low starting value. 8 mm³/s is a good starting point.
 
 Let's quickly go through some other settings that can increase your print speed: The model we are printing does not need any infill. You can safely set it to 0%. Only the hooks for the rubber band would get some and they don't need it. Also, you can disable gap filling completely. Yes, this ends up with some small holes, but saves quite some time. Also it might reduce stringing, as sometimes the gap fill material does not fit into its hole and squeezes out. Disable gap fill by setting the `Gap fill` speed to 0.
 
-Now go to the `Plater` tab and slice your model. In the bottom left corner, change the `View` to `Volumentric flow rate`. You model should have the maxum flow rate (8 mm³/s) everywhere (expect for the first layer) like in this picture:
+Now go to the `Plater` tab and slice your model. In the bottom left corner, change the `View` to `Volumetric flow rate`. You model should have the maxum flow rate (8 mm³/s) everywhere (expect for the first layer) like in this picture:
 ![Flow Rate][flow_rate]
 
-You should now be good to go for your first test print with high speed settings. If this works well (and I hope it does, otherwise this guide might be crap...) you can increase the `Max. Volumentric Speed` (e.g. in steps of 2 mm³/s) until your print starts to look ugly or your extruder makes painful noises and loses steps. If this happens, you have reached the limit of your printer. Go down to the last working value (I am running a Prusa i3 MK2.5S with a 0.8 mm nozzle at 17 mm³/s).
+You should now be good to go for your first test print with high speed settings. If this works well (and I hope it does, otherwise this guide might be crap...) you can increase the `Max. Volumetric Speed` (e.g. in steps of 2 mm³/s) until your print starts to look ugly or your extruder makes painful noises and loses steps. If this happens, you have reached the limit of your printer. Go down to the last working value (I am running a Prusa i3 MK2.5S with a 0.8 mm nozzle at 17 mm³/s).
 
 ## Advanced Parameter Tuning
 
