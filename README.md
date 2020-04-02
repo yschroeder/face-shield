@@ -56,16 +56,15 @@ This repository contains multiple models that you can choose from. Let me introd
 ### `stl/covid19_headband_rc3_no_text v1.stl`
 This a remix of the original [Prusa Face Shield RC3](https://www.prusaprinters.org/prints/25857-prusa-face-shield). I removed the text and indents from it as it slows down printing. Otherwise, this is exactly the same as the original.
 
-### DEPRECATED: `stl/Covid-19 Shield v10.stl`
 
-If you are new to this repository, use the `stl/Covid-19 Shield v18.stl` version (see below). It is totally compatible and prints faster!
-
-### `stl/Covid-19 Shield v18.stl`
-This is a version that I designed myself. All the relevant features have the same geometry as the original Prusa version. However, the wall thickness is reduced from 2.5 mm to 1.67 mm. This makes it possible to print it very fast, but it gets more flexible (maybe this is not even a downside). The guide below uses this model.
+### `stl/Covid-19 Shield v18.stl` and `stl/Covid-19 Shield v10.stl`
+These are versions that I designed myself. All the relevant features have the same geometry as the original Prusa version. However, the wall thickness is reduced from 2.5 mm to 1.67 mm. This makes it possible to print it very fast, but it gets more flexible (maybe this is not even a downside). The guide below uses this model.
 
 If you have problems with layer adhesion, try `stl/Covid-19 Shield v18 Lily.stl`. It has lily pads at crucial points to help with adhesion. Just remove them with side cutters at the end.
 
 If you want to print for longer durations (e.g. over night), you can try the stacked versions. Look into `stl/stacks`. We have stacks from 2 to 9 parts. Start with a small stack and check if it prints well on your machine and that you can split the parts afterwards!
+
+**ATTENTION: Make sure the two perimeters stick together well! If they don't, the finished part will be extremely weak! You can try to increase the extrusion width even further (e.g. 1.0 mm) or increase the extrusion multiplier. If you cannot manage to print parts where the two wall stick to each other, print the v10 or original RC3 instead!**
 
 ### `stl/Covid-19 Shield 2.5mm v2.stl`
 If you think the above version is too flimsy/flexible you can go with this one. It has the same thickness as the original from Prusa. It has a constant wall thickness of 2.5 mm.
