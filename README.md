@@ -26,7 +26,7 @@ Q: Is your improved version strong enough? [Josef Prusa said on Twitter](https:/
 
 A: Actually, I don't know. Josef Prusa was not specific on why it was designed the way it was. I think the updated version is also good, it might not be as rigid, instead it is more flexible. If you think the improved version is not strong enough, there are other options. If you want to be sure, print `stl/covid19_headband_rc3_no_text v1.stl`. That version is the orignal one without the text, so it prints a bit faster while being exactly as strong and beefy.
 
-Take a look [here](https://raw.githubusercontent.com/yschroeder/face-shield/master/quality_control.md) to see how you can abuse the part without breaking.
+Take a look [here](quality_control.md) to see how you can abuse the part without breaking.
 
 Q: How much faster can we get?
 
@@ -53,11 +53,11 @@ A: Short answer: Good idea, a hospital also asked us for wider shields, so we di
 
 Q: How do I know my print is sturdy enough?
 
-A: Look into the [Quality Control](https://raw.githubusercontent.com/yschroeder/face-shield/master/quality_control.md) document, there we provide some hints how your part should look like, or not look like.
+A: Look into the [Quality Control](quality_control.md) document, there we provide some hints how your part should look like, or not look like.
 
 Q: I guess my part failed the quality control, what can I do?
 
-A: The [Quality Control](https://raw.githubusercontent.com/yschroeder/face-shield/master/quality_control.md) document also gives hints on what to change. Look into it again.
+A: The [Quality Control](quality_control.md) document also gives hints on what to change. Look into it again.
 
 ## Which model to print?
 
@@ -127,10 +127,10 @@ You can tune the amount of `Solid layers` at the top to close holes in the top l
 
 You can also tune the K factor (also known as linear advance) for your printer. Make sure it supports it. Prusa printers do support this. It will basically control the pressure in the nozzle. This is important at high speeds. You can read more about this in the [Prusa Knowledge Base](https://help.prusa3d.com/en/article/linear-advance_2252). Prusa suggest a default of 45 for PETG. I get better results with 40 on a 0.4 mm nozzle. On my 0.8 mm nozzle I am currently using a value of 15.
 
-[gap_fill_and_infill]: https://raw.githubusercontent.com/yschroeder/face-shield/master/pictures/gap_fill_and_infill.PNG "Gap Fill and Infill"
+[gap_fill_and_infill]: pictures/gap_fill_and_infill.PNG "Gap Fill and Infill"
 
-[only_perimeters]: https://raw.githubusercontent.com/yschroeder/face-shield/master/pictures/only_perimeters.PNG "Only Perimeters"
+[only_perimeters]: pictures/only_perimeters.PNG "Only Perimeters"
 
-[thin_wall_thickness]: https://raw.githubusercontent.com/yschroeder/face-shield/master/pictures/thin_wall_thickness.PNG "Thin Wall Thickness"
+[thin_wall_thickness]: pictures/thin_wall_thickness.PNG "Thin Wall Thickness"
 
-[flow_rate]: https://raw.githubusercontent.com/yschroeder/face-shield/master/pictures/flow_rate.PNG "Flow Rate"
+[flow_rate]: pictures/flow_rate.PNG "Flow Rate"
