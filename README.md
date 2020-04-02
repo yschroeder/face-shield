@@ -1,5 +1,11 @@
-# Print COVID-19 Face Shields _the fast way_
-Some files and documentation on how to print the Prusa Protective Face Shield really fast.
+# Print Face Shields _the fast way_
+Some files and documentation on how to print the Prusa Face Shield really fast.
+
+## Disclaimer
+
+These design files are provided "AS IS" WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied, including, without limitation, any warranties or conditions of TITLE, NON-INFRINGEMENT, MERCHANTABILITY, or FITNESS FOR A PARTICULAR PURPOSE.
+
+This not a medical device. Consider it a Halloween constume! It is neither certified nor fit for any purpose.
 
 ## TL;DR
 
@@ -12,7 +18,7 @@ Some files and documentation on how to print the Prusa Protective Face Shield re
 
 ## Frequently Asked Questions
 
-Q: That `Prusa Protective Face Shield RC3` prints so slow and the virus is spreading exponentially! How can we be faster?
+Q: That `Prusa Face Shield RC3` prints so slow and the virus is spreading exponentially! How can we be faster?
 
 A: Good point! This is exactly the purpose of this guide/repository. I will talk you through all the important things to consider when you want to print fast.
 
@@ -48,7 +54,7 @@ A: Short answer: Good idea, a hospital also asked us for wider shields, so we di
 This repository contains multiple models that you can choose from. Let me introduce them to you:
 
 ### `stl/covid19_headband_rc3_no_text v1.stl`
-This a remix of the original [Prusa Protective Face Shield RC3](https://www.prusaprinters.org/prints/25857-prusa-protective-face-shield-rc2). I removed the text and indents from it as it slows down printing. Otherwise, this is exactly the same as the original.
+This a remix of the original [Prusa Face Shield RC3](https://www.prusaprinters.org/prints/25857-prusa-face-shield). I removed the text and indents from it as it slows down printing. Otherwise, this is exactly the same as the original.
 
 ### DEPRECATED: `stl/Covid-19 Shield v10.stl`
 
@@ -108,7 +114,7 @@ You should now be good to go for your first test print with high speed settings.
 
 Ok, you got the basic fast print working, but you want more!
 
-You can tune the amount of `Solid layers` at the top to close holes in the top layer of hooks for the rubber band. Increase the number of solid layers to 5. It also helps to set the `Solid infill` and `Top solid infill` to 0.55 mm, to close even more holes. 
+You can tune the amount of `Solid layers` at the top to close holes in the top layer of hooks for the rubber band. Increase the number of solid layers to 5. It also helps to set the `Solid infill` and `Top solid infill` to 0.55 mm, to close even more holes.
 
 You can also tune the K factor (also known as linear advance) for your printer. Make sure it supports it. Prusa printers do support this. It will basically control the pressure in the nozzle. This is important at high speeds. You can read more about this in the [Prusa Knowledge Base](https://help.prusa3d.com/en/article/linear-advance_2252). Prusa suggest a default of 45 for PETG. I get better results with 40 on a 0.4 mm nozzle. On my 0.8 mm nozzle I am currently using a value of 15.
 
