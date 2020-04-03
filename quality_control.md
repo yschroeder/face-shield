@@ -2,9 +2,11 @@
 
 Welcome to the quality control section! You being here indicates that you actually care about what you print. Congratulations!
 
+**ATTENTION: THESE TESTS ONLY APPLY TO THE `v18` SHIELD! OTHER VERSIONS ARE LESS FLEXIBLE AND WILL POSSIBLY BREAK EARLIER!**
+
 ## What your part should look like
 
-Actually, we can't really tell you what your printed part needs to withstand. We can only show you what our parts withstand. If your part breaks earlier, this does not automatically mean it is bad, but it is not as good as it could be! Our part in the pictures is made from PETG, so if your part is from another material your results might be different.
+Actually, we can't really tell you what your printed part needs to withstand. We can only show you what our parts withstand. If your part breaks earlier, this does not automatically mean it is bad, but it is not as good as it could be! **Our part in the pictures is made from PETG, so if your part is from another material your results might be different.**
 
 To check your part, bend it the following ways, **during bending it should not crack at all!**
 
