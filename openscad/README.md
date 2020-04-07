@@ -2,7 +2,7 @@
 
 This directory contains an [OpenScad](https://www.openscad.org/) script for generating stacks of arbitrary heights of the COVID-19 v18 face shield model.
 
-![Example stack of 10 masks]("stack_of_10.png")
+![Example stack of 10 masks](stack_of_10.png)
 
 ## Usage
 
