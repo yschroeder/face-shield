@@ -47,7 +47,7 @@ If you're using something other than the CR-10s, here are the general parameters
 * **20% skin overlap percentage** - Allow for the walls to overlap one another
 * **107% flow** - Extrude material at 107% of what is otherwise calculated, again hoping to merge the walls
 * **217 degree hot end temperature (Hatchbox PLA)** - Hotter than usual to help with de-lamination
-* **50mm/s print speed** - Slower for more consistent prints
+* **25mm/s print speed** - Slower for more consistent prints
 * **No supports** - The model doesn't require any supports
 * **No plate adhesion patterns (skirt, brim, etc)** - Lily pads are provided, so no additional adhesion is required
 * **Retraction enabled** - Definitely want to retract between jumps, as this configuration already results in a lot of stringing
