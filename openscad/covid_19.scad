@@ -22,8 +22,6 @@ middle_pillar_width_offset = 29.55;
 
 pillar_height = shield_height - 2 + (inter_layer_support_height * 2);
 
-shield_stack(count = 15);
-
 module shield_stack(count = 10) {
     
     
