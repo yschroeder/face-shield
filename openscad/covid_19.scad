@@ -22,6 +22,8 @@ middle_pillar_width_offset = 29.55;
 
 pillar_height = shield_height - 2 + (inter_layer_support_height * 2);
 
+shield_stack(count = 15);
+
 module shield_stack(count = 10) {
     
     
@@ -151,6 +153,12 @@ module shield_layer_separators() {
     translate([(mask_width / 4) + 21, mask_depth - 39, shield_height])
     cylinder(h = inter_layer_support_height, d = wall_width);
     
+    translate([(mask_width / 4) + 35, mask_depth - 49.5, shield_height])
+    cylinder(h = inter_layer_support_height, d = wall_width);
+    
+    translate([(mask_width / 4) + 29, mask_depth - 52.5, shield_height])
+    cylinder(h = inter_layer_support_height, d = wall_width);
+    
     // Middle back right
     
     translate([-(mask_width / 4) - 24.5, mask_depth - 36, shield_height])
@@ -159,12 +167,21 @@ module shield_layer_separators() {
     translate([-(mask_width / 4) - 21, mask_depth - 39, shield_height])
     cylinder(h = inter_layer_support_height, d = wall_width);
     
+    translate([-(mask_width / 4) - 35, mask_depth - 49.5, shield_height])
+    cylinder(h = inter_layer_support_height, d = wall_width);
+    
+    translate([-(mask_width / 4) - 29, mask_depth - 52.5, shield_height])
+    cylinder(h = inter_layer_support_height, d = wall_width);
+    
     // Left 
     
     translate([(mask_width / 2) - 4.8, mask_depth - 64, shield_height])
     cylinder(h = inter_layer_support_height, d = wall_width);
     
     translate([(mask_width / 2) - 14.0, mask_depth - 64, shield_height])
+    cylinder(h = inter_layer_support_height, d = wall_width);
+    
+    translate([(mask_width / 2) - 11.0, mask_depth - 78, shield_height])
     cylinder(h = inter_layer_support_height, d = wall_width);
     
     translate([(mask_width / 2) - 37.5, mask_depth - 64, shield_height])
@@ -182,6 +199,9 @@ module shield_layer_separators() {
     cylinder(h = inter_layer_support_height, d = wall_width);
     
     translate([-(mask_width / 2) + 14.0, mask_depth - 64, shield_height])
+    cylinder(h = inter_layer_support_height, d = wall_width);
+    
+    translate([-(mask_width / 2) + 11.0, mask_depth - 78, shield_height])
     cylinder(h = inter_layer_support_height, d = wall_width);
     
     translate([-(mask_width / 2) + 37.5, mask_depth - 64, shield_height])
